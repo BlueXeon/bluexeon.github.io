@@ -9,6 +9,12 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #999;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#283350+0,2f405b+16,475064+34,736f72+50,ac9882+66,dab983+84,d8bc75+100 */
+
+background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQABjBgaGs4xQPpgDYoME4ByYAJIuBmMAeIUDOFTMX90AAAAASUVORK5CYII=), url("../images/wallhaven.jpg");
+	background-repeat: repeat;
+	background-position: 50% 0;
+	background-attachment: fixed;
 }
 
 a, .btn {
@@ -27,10 +33,6 @@ h1, h2, h3 {
 }
 
 #header {
-	/*background: url("../images/1-2.jpg") fixed;*/
-	background: url("../images/wallhaven.png") fixed;
-	background-position: 50% 0;
-	background-size: cover;
 	height: 100%;
 	width: 100%;
 	display: block;

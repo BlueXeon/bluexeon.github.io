@@ -17,7 +17,7 @@ $(window).resize(function(){
 function resize(){
 	windowHeight = $(window).innerHeight();
 	windowWidth = $(window).innerWidth();
-	if (windowWidth > 768) {
+	if (windowWidth > 0) {
 		$("#header").css("min-height", windowHeight);
 		$("table.vertical").css("min-height", windowHeight);
 	} else {
