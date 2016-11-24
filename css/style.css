@@ -1,0 +1,270 @@
+
+
+/*	orange 	= #f29b5e
+	blue 	= #78bdfc
+	purple	= #ac8dd4
+*/
+
+
+body {
+	font-family: 'Roboto', sans-serif;
+	color: #999;
+}
+
+a, .btn {
+	webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+h1, h2, h3 {
+	font-family: 'Oswald', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.07em;
+	color: #555;
+}
+
+#header {
+	/*background: url("../images/1-2.jpg") fixed;*/
+	background: url("../images/wallhaven.png") fixed;
+	background-position: 50% 0;
+	background-size: cover;
+	height: 100%;
+	width: 100%;
+	display: block;
+	position: relative;
+	padding-bottom: 0px;
+}
+
+#header h1 {
+	/*font-size: 3em;*/
+	color: #fff;
+	margin-bottom: 25px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+#header h3 {
+	/*font-size: 3em;*/
+	font-weight: 300;
+	color: #ddd;
+	margin-bottom: 80px;
+	text-shadow: 0 0 5px rgba(0,0,0,0.5);
+	line-height: 1.5em;
+}
+
+#logo {
+	margin-bottom: 20px;
+	height: 175px;
+	width: 175px;
+	text-align: center;
+}
+
+table.vertical {
+	width: 100%;
+}
+
+table.vertical td {
+	text-align: center;
+	vertical-align: middle;
+	padding: 140px 0;
+}
+
+
+
+@media (max-width: 768px) {
+	table.vertical td {
+		padding: 50px 0;
+	}
+}
+
+#header .btn {
+	margin: 10px;
+	background-color: transparent;
+	border: 2px #fff solid;
+	padding: 15px;
+	color: #fff;
+	text-transform: lowercase;
+	font-weight: 300;
+
+	border-radius: 4px;
+}
+
+#header .btn:hover {
+	background-color: rgba(0,0,0,0.2);
+}
+
+#header .btn#about-me-btn:hover {
+	border-color: #78bdfc;
+	color: #78bdfc;
+}
+
+#header .btn#projects-btn:hover {
+	border-color: #ac8dd4;
+	color: #ac8dd4;
+}
+
+#header .btn#contact-me-btn:hover {
+	border-color: #f29b5e;
+	color: #f29b5e;
+}
+
+section h2 {
+	margin-bottom: 140px;
+}
+
+#about-me {
+	background-color: #fff;
+}
+
+#about-me .icon {
+	max-height: 100px;
+	margin-bottom: 30px;
+}
+
+#about-me h3 {
+	border-bottom: 3px dashed #e6e6e6;
+	padding-bottom: 50px;
+}
+
+#about-me h3#design {
+	color: #f29b5e;
+}
+
+#about-me h3#code {
+	color: #78bdfc;
+}
+
+#about-me h3#responsive {
+	color: #ac8dd4;
+}
+
+#about-me p {
+	font-size: 18px;
+	line-height: 35px;
+	font-weight: 300;
+	margin-top: 40px;
+	margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+	#about-me h3 {
+		border-bottom: none;
+		padding-bottom: 20px;
+	}
+
+	#about-me p {
+		margin-top: 10px;
+		margin-bottom: 70px;
+		padding-bottom: 70px;
+		border-bottom: 3px dashed #e6e6e6;
+	}
+
+	#about-me .about-me-single:last-child p {
+		margin-bottom: 0;
+		padding-bottom: 0;
+		border-bottom: none;
+	}
+
+	#about-me .icon {
+		margin-bottom: 20px;
+	}
+
+	section h2 {
+		margin-bottom: 75px;
+	}
+}
+
+#projects {
+	background: #f2f2f2;
+}
+
+#projects img {
+	border-radius: 10px;
+}
+
+#projects a:hover img {
+	opacity: 0.8;
+}
+
+#projects a img {
+	webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-ms-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+}
+
+
+
+
+.project-thumb {
+	padding-bottom: 30px;
+}
+
+.vertical-align {
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+#contact-me {
+
+}
+
+#contact-me input[type=submit] {
+	background-color: #f29b5e;
+	border: 2px #f29b5e solid;
+	padding: 15px;
+	color: #fff;
+	text-transform: lowercase;
+	font-weight: 400;
+	border-radius: 4px;
+}
+
+#contact-me input[type=submit]:hover {
+	opacity: 0.8;
+}
+
+#contact-me input, #contact-me textarea {
+	margin-bottom: 20px;
+	font-weight: 300;
+}
+
+.form-control::-moz-placeholder {
+  color: #aaa;
+  opacity: 1;
+}
+.form-control:-ms-input-placeholder {
+  color: #aaa;
+}
+.form-control::-webkit-input-placeholder {
+  color: #aaa;
+}
+
+.form-control:focus {
+  border-color: #f2c6a8;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 155, 94, .5);
+          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 155, 94, .5);
+}
+
+footer {
+	/*background: url("../images/1-2.jpg") center center;*/
+	background: url("../images/wallhaven.png") center center;
+	background-size: cover;
+	height: 500px;
+	width: 100%;
+	display: block;
+	position: relative;
+	padding-bottom: 0px;
+}
+
+footer #overlay {
+	width: 100%;
+	height: 500px;
+	display: block;
+	background: rgba(0,0,0,0.6);
+
+}
