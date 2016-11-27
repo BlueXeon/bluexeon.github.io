@@ -9,9 +9,19 @@
 body {
 	font-family: 'Roboto', sans-serif;
 	color: #999;
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#283350+0,2f405b+16,475064+34,736f72+50,ac9882+66,dab983+84,d8bc75+100 */
 
-background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQABjBgaGs4xQPpgDYoME4ByYAJIuBmMAeIUDOFTMX90AAAAASUVORK5CYII=), url("../images/wallhaven.jpg");
+
+
+
+
+
+
+
+	background: #085078; /* fallback for old browsers */
+	background: -webkit-linear-gradient(to left, #085078 , #85D8CE); /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to left, #085078 , #85D8CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	        	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#283350+0,2f405b+16,475064+34,736f72+50,ac9882+66,dab983+84,d8bc75+100 */
+
 	background-repeat: repeat;
 	background-position: 50% 0;
 	background-attachment: fixed;
@@ -38,6 +48,11 @@ h1, h2, h3 {
 	display: block;
 	position: relative;
 	padding-bottom: 0px;
+	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQABjBgaGs4xQPpgDYoME4ByYAJIuBmMAeIUDOFTMX90AAAAASUVORK5CYII=);
+	-webkit-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.5);
+
 }
 
 #header h1 {
@@ -70,14 +85,14 @@ table.vertical {
 table.vertical td {
 	text-align: center;
 	vertical-align: middle;
-	padding: 140px 0;
+	padding: 40px 0;
 }
 
 
 
 @media (max-width: 768px) {
 	table.vertical td {
-		padding: 50px 0;
+		padding: 20px 0;
 	}
 }
 
@@ -103,8 +118,8 @@ table.vertical td {
 }
 
 #header .btn#projects-btn:hover {
-	border-color: #ac8dd4;
-	color: #ac8dd4;
+	border-color: #85D8CE;
+	color: #85D8CE;
 }
 
 #header .btn#contact-me-btn:hover {
@@ -253,9 +268,7 @@ section h2 {
 }
 
 footer {
-	/*background: url("../images/1-2.jpg") center center;*/
-	background: url("../images/wallhaven.png") center center;
-	background-size: cover;
+
 	height: 500px;
 	width: 100%;
 	display: block;
