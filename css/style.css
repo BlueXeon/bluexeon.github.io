@@ -49,9 +49,9 @@ h1, h2, h3 {
 	position: relative;
 	padding-bottom: 0px;
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQABjBgaGs4xQPpgDYoME4ByYAJIuBmMAeIUDOFTMX90AAAAASUVORK5CYII=);
-	-webkit-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.5);
-	box-shadow: inset 0px 0px 300px 0px rgba(0,0,0,0.5);
+	-webkit-box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
+	-moz-box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
+	box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
 
 }
 
