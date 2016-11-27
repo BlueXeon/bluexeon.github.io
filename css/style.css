@@ -1,135 +1,89 @@
-
-
-/*	orange 	= #f29b5e
-	blue 	= #78bdfc
-	purple	= #ac8dd4
-*/
-
-
 body {
-	font-family: 'Roboto', sans-serif;
-	color: #999;
-
-
-
-
-
-
-
-
-	background: #085078; /* fallback for old browsers */
-	background: -webkit-linear-gradient(to left, #085078 , #85D8CE); /* Chrome 10-25, Safari 5.1-6 */
-	background: linear-gradient(to left, #085078 , #85D8CE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-	        	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#283350+0,2f405b+16,475064+34,736f72+50,ac9882+66,dab983+84,d8bc75+100 */
-
-	background-repeat: repeat;
-	background-position: 50% 0;
-	background-attachment: fixed;
-}
+  font-family: 'Roboto', sans-serif;
+  color: #999;
+  background: #085078;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #085078, #85D8CE);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #085078, #85D8CE);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-repeat: repeat;
+  background-position: 50% 0;
+  background-attachment: fixed; }
 
 a, .btn {
-	webkit-transition: all .2s ease;
-	-moz-transition: all .2s ease;
-	-ms-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
-}
+  webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -ms-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease; }
 
 h1, h2, h3 {
-	font-family: 'Oswald', sans-serif;
-	text-transform: uppercase;
-	letter-spacing: 0.07em;
-	color: #555;
-}
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #555; }
 
 #header {
-	height: 100%;
-	width: 100%;
-	display: block;
-	position: relative;
-	padding-bottom: 0px;
-	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQABjBgaGs4xQPpgDYoME4ByYAJIuBmMAeIUDOFTMX90AAAAASUVORK5CYII=);
-	-webkit-box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
-	-moz-box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
-	box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
-
-}
-
-#header h1 {
-	/*font-size: 3em;*/
-	color: #fff;
-	margin-bottom: 25px;
-	text-shadow: 0 0 5px rgba(0,0,0,0.5);
-}
-
-#header h3 {
-	/*font-size: 3em;*/
-	font-weight: 300;
-	color: #ddd;
-	margin-bottom: 80px;
-	text-shadow: 0 0 5px rgba(0,0,0,0.5);
-	line-height: 1.5em;
-}
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+  padding-bottom: 0px;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAIElEQVQYV2NkQABjBgaGs4xQPpgDYoME4ByYAJIuBmMAeIUDOFTMX90AAAAASUVORK5CYII=);
+  -webkit-box-shadow: inset 0px 0px 270px 0px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: inset 0px 0px 270px 0px rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0px 0px 270px 0px rgba(0, 0, 0, 0.5); }
+  #header h1 {
+    color: #fff;
+    margin-bottom: 25px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+  #header h3 {
+    font-weight: 300;
+    color: #ddd;
+    margin-bottom: 80px;
+    text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    line-height: 1.5em; }
+  #header .btn {
+    margin: 10px;
+    background-color: transparent;
+    border: 2px #fff solid;
+    padding: 15px;
+    color: #fff;
+    text-transform: lowercase;
+    font-weight: 300;
+    border-radius: 4px; }
+  #header .btn#projects-btn:hover {
+    border-color: #85D8CE;
+    color: #85D8CE; }
+  #header .btn#about-me-btn:hover {
+    border-color: #78bdfc;
+    color: #78bdfc; }
+  #header .btn#contact-me-btn:hover {
+    border-color: #f29b5e;
+    color: #f29b5e; }
 
 #logo {
-	margin-bottom: 20px;
-	height: 175px;
-	width: 175px;
-	text-align: center;
-}
+  margin-bottom: 20px;
+  height: 175px;
+  width: 175px;
+  text-align: center; }
 
 table.vertical {
-	width: 100%;
-}
+  width: 100%; }
 
 table.vertical td {
-	text-align: center;
-	vertical-align: middle;
-	padding: 40px 0;
-}
-
-
+  text-align: center;
+  vertical-align: middle;
+  padding: 40px 0; }
 
 @media (max-width: 768px) {
-	table.vertical td {
-		padding: 20px 0;
-	}
-}
-
-#header .btn {
-	margin: 10px;
-	background-color: transparent;
-	border: 2px #fff solid;
-	padding: 15px;
-	color: #fff;
-	text-transform: lowercase;
-	font-weight: 300;
-
-	border-radius: 4px;
-}
-
-#header .btn:hover {
-	background-color: rgba(0,0,0,0.2);
-}
-
-#header .btn#about-me-btn:hover {
-	border-color: #78bdfc;
-	color: #78bdfc;
-}
-
-#header .btn#projects-btn:hover {
-	border-color: #85D8CE;
-	color: #85D8CE;
-}
-
-#header .btn#contact-me-btn:hover {
-	border-color: #f29b5e;
-	color: #f29b5e;
-}
-
+  table.vertical td {
+    padding: 20px 0; } }
 section h2 {
-	margin-bottom: 140px;
-}
+  margin-bottom: 140px; }
+
+/* Unused styling
 
 #about-me {
 	background-color: #fff;
@@ -193,42 +147,28 @@ section h2 {
 	}
 }
 
+*/
 #projects {
-	background: #f2f2f2;
-}
-
-#projects img {
-	border-radius: 10px;
-}
-
-#projects a:hover img {
-	opacity: 0.8;
-}
-
-#projects a img {
-	webkit-transition: all .2s ease;
-	-moz-transition: all .2s ease;
-	-ms-transition: all .2s ease;
-	-o-transition: all .2s ease;
-	transition: all .2s ease;
-}
-
-
-
+  background: #f2f2f2; }
+  #projects img {
+    border-radius: 10px;
+    webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
+    -ms-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease; }
+  #projects a:hover img {
+    opacity: 0.8; }
 
 .project-thumb {
-	padding-bottom: 30px;
-}
+  padding-bottom: 30px; }
 
 .vertical-align {
-	position: relative;
-	top: 50%;
-	transform: translateY(-50%);
-}
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
 
-#contact-me {
-
-}
+/* Unused styling
 
 #contact-me input[type=submit] {
 	background-color: #f29b5e;
@@ -264,11 +204,10 @@ section h2 {
   border-color: #f2c6a8;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 155, 94, .5);
-          box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 155, 94, .5);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(242, 155, 94, .5);
 }
 
 footer {
-
 	height: 500px;
 	width: 100%;
 	display: block;
@@ -281,5 +220,8 @@ footer #overlay {
 	height: 500px;
 	display: block;
 	background: rgba(0,0,0,0.6);
-
 }
+
+*/
+
+/*# sourceMappingURL=style.css.map */
