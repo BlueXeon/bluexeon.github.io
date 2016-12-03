@@ -1,5 +1,19 @@
+@mixin xs {
+  @media (max-width: 768px) { @content; }
+}
+@mixin sm {
+  @media (max-width: 992px) { @content; }
+}
+@mixin md {
+  @media (max-width: 1200px) { @content; }
+}
+@mixin lg {
+  @media (min-width: 1201px) { @content; }
+}
+
 $green: #85D8CE;
 $blue: #085078;
+$blue-green: #4694A3;
 $heading-font: 'Oswald', sans-serif;
 $dark-heading-colour: #555;
 
@@ -12,6 +26,9 @@ body {
 	background-repeat: repeat;
 	background-position: 50% 0;
 	background-attachment: fixed;
+	@include sm {
+		background: $blue-green;
+	}
 }
 
 a, .btn {
@@ -39,6 +56,12 @@ h1, h2, h3 {
 	-webkit-box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
 	-moz-box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
 	box-shadow: inset 0px 0px 270px 0px rgba(0,0,0,0.5);
+	@include sm {
+		-webkit-box-shadow: none;
+		-moz-box-shadow: none;
+		box-shadow: none;
+		background: none;
+	}
 	h1 {
 		color: #fff;
 		margin-bottom: 25px;
@@ -57,21 +80,29 @@ h1, h2, h3 {
 		border: 2px #fff solid;
 		padding: 15px;
 		color: #fff;
-		text-transform: lowercase;
+		/*text-transform: lowercase;*/
 		font-weight: 300;
 		border-radius: 4px;
-	}
-	.btn#projects-btn:hover {
-		border-color: $green;
-		color: $green;
-	}
-	.btn#about-me-btn:hover {
-		border-color: #78bdfc;
-		color: #78bdfc;
-	}
-	.btn#contact-me-btn:hover {
-		border-color: #f29b5e;
-		color: #f29b5e;
+		&#github-btn img.github-logo {
+			width: 25px;
+			margin-right: 12px;
+		}
+		&#github-btn:hover {
+			border-color: $green;
+			color: $green;
+		}
+		&#projects-btn:hover {
+			border-color: $green;
+			color: $green;
+		}
+		&#about-me-btn:hover {
+			border-color: #78bdfc;
+			color: #78bdfc;
+		}
+		&#contact-me-btn:hover {
+			border-color: #f29b5e;
+			color: #f29b5e;
+		}
 	}
 }
 
@@ -84,13 +115,13 @@ h1, h2, h3 {
 
 table.vertical {
 	width: 100%;
+	td {
+		text-align: center;
+		vertical-align: middle;
+		padding: 40px 0;
+	}
 }
 
-table.vertical td {
-	text-align: center;
-	vertical-align: middle;
-	padding: 40px 0;
-}
 
 @media (max-width: 768px) {
 	table.vertical td {
